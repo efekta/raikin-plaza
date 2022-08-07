@@ -28,15 +28,16 @@ function watcher() {
     gulp.watch(path.watch.scss, scss);
     gulp.watch(path.watch.js, js);
     gulp.watch(path.watch.images, images);
+    gulp.watch(path.watch.images, svgSprive);
 }
 
 export { svgSprive }
 
-// Аоследовательная обработка шрифтов
+// Последовательная обработка шрифтов
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
 
 // Основные задачи
-const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images));
+const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images, svgSprive));
 
 // Построение сценариев
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));

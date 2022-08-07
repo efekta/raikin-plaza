@@ -1,0 +1,29 @@
+.card {
+  background: #FFFFFF;
+  min-height: 276px;
+
+  &__link {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__img {
+    height: 112px;
+  }
+
+  &__bottom {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #DF4826;
+    padding: 20px;
+    border-top: 3px dashed #EFEFEF;
+  }
+}

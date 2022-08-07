@@ -1,2 +1,6 @@
 mixin rating()
-    .rating Твои баллы: <span> 50 </span>
+    .rating
+        span Твои баллы:
+        span.rating__count 50
+        svg.svg-icon
+            use(xlink:href="img/icons/icons.svg#star")

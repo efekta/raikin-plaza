@@ -7,3 +7,10 @@
     width: 173px;
   }
 }
+
+.card-list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 50% 50%;
+  flex-wrap: wrap;
+}

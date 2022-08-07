@@ -13,6 +13,7 @@ html {
     box-sizing: border-box;
     font-variation-settings: 'wght' 400;
     font: 14px/1.2 'Manrope', sans-serif;
+    color: var(--dark-color);
 }
 
 body {
@@ -22,7 +23,6 @@ body {
 img {
     height: auto;
     max-width: 100%;
-    object-fit: contain;
 }
 
 a {
@@ -58,14 +58,14 @@ ol, ul {
     }
 
     .main--bg-white {
-        color: #f4f4f4;
+        background: #f4f4f4;
     }
 }
 
 .svg-icon {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;

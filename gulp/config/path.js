@@ -17,11 +17,11 @@ export const path = {
     src: {
         js: `${ srcFolder }/js/app.js`,
         images: `${ srcFolder }/img/**/*.{jpg,jpeg,png,gif,webp,svg}`,
-        svg: `${ srcFolder }/img/**/*.svg`,
+        svg: `${ srcFolder }/img/icons/**/*.svg`,
         scss: `${ srcFolder }/scss/style.scss`,
         html: `${ srcFolder }/*.pug`, //.html
         files: `${ srcFolder }/files/**/*.*`,
-        svgicons: `${srcFolder}/icons/*.svg`,
+        svgicons: `${srcFolder}/img/icons/*.svg`,
     },
     watch: {
         js: `${ srcFolder }/js/**/*.js`,
