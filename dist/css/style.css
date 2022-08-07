@@ -433,6 +433,10 @@ html {
   color: var(--dark-color);
 }
 
+html.hidden {
+  overflow: hidden;
+}
+
 body {
   margin: 0;
 }
