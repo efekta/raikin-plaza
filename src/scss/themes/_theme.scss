@@ -65,3 +65,10 @@ ol, ul {
     stroke: currentColor;
     fill: currentColor;
 }
+
+.title {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 49px;
+    color: var(--white-color)
+}
