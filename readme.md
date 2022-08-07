@@ -1,1 +1,1 @@
-https://efekta.github.io/raikin-plaza/index.html
+https://efekta.github.io/raikin-plaza/dist/index.html
