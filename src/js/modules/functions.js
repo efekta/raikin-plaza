@@ -9,5 +9,22 @@ export function isWebp() {
     testWebP(function (support) {
         let className = support === true ? 'webp' : 'no-webp';
         document.documentElement.classList.add(className);
+
+
+        $(document).ready(function(){
+            // menu bottom active class
+            $('.menu-list__link').click (function() {
+                $('.menu-list__link').removeClass("active");
+                $(this).addClass("active");
+            });
+
+
+            // mob menu
+            $('.burger').on('click', function (e) {
+                $('.mob-menu').toggleClass('show');
+                $('.burger').toggleClass('open');
+                $('.header').toggleClass('light-bg');
+            })
+        });
     });
 }

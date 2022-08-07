@@ -1,6 +1,12 @@
 mixin main()
     main.main.main--bg-white
         .container
+            .rating
+                span Твои баллы:
+                span.rating__count 50
+                svg.svg-icon
+                    use(xlink:href="img/icons/icons.svg#star")
+        .container
             ul.card-list
                 include ../components/card
                 +card

@@ -5,12 +5,8 @@
   height: 64px;
   font-weight: 700;
   font-size: 18px;
-  line-height: 18px;
   display: flex;
   justify-content: center;
+  gap: 6px;
   margin-top: -32px;
-
-  &__count {
-    margin: 0 6px;
-  }
 }

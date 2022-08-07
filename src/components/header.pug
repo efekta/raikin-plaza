@@ -3,7 +3,8 @@ mixin header()
         .container
             .header-container
                 a.logo
-                    img(src="img/logo.svg" alt="Логотип")
+                    svg.svg-icon
+                        use(xlink:href="img/icons/icons.svg#logo")
                 .burger
                     span
                     span

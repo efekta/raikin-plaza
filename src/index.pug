@@ -12,11 +12,48 @@ html(lang="ru")
             +header
             include components/section-top
             +section-top
-            .container
-                include components/rating
-                +rating
             include components/main 
-            +main 
-            include components/footer 
-            +footer
+            +main
+            .menu-bottom
+                ul.menu-list
+                    li.menu-list__item
+                        a.menu-list__link.active(href="#")
+                            svg.svg-icon
+                                use(xlink:href="img/icons/icons.svg#home")
+                            span Главная
+                    li.menu-list__item
+                        a.menu-list__link(href="#")
+                            svg.svg-icon
+                                use(xlink:href="img/icons/icons.svg#catalog")
+                            span Витрина
+                    li.menu-list__item
+                        a.menu-list__link(href="#")
+                            .scanner
+                                svg.svg-icon
+                                    use(xlink:href="img/icons/icons.svg#qr")
+                            span Сканер
+                    li.menu-list__item
+                        a.menu-list__link(href="#")
+                            svg.svg-icon
+                                use(xlink:href="img/icons/icons.svg#gift")
+                            span Подарки
+                    li.menu-list__item
+                        a.menu-list__link(href="#")
+                            svg.svg-icon
+                                use(xlink:href="img/icons/icons.svg#user")
+                            span Аккаунт
+
+            nav.mob-menu
+                ul.menu
+                    li.menu__item
+                        a.menu__link Магазины
+                    li.menu__item
+                        a.menu__link Еда
+                    li.menu__item
+                        a.menu__link Услуги и сервисы
+                    li.menu__item
+                        a.menu__link Развлечения
+                    li.menu__item
+                        a.menu__link Новости
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js")
         script(src="js/app.min.js") 

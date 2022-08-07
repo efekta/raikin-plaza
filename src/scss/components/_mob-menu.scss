@@ -1,0 +1,37 @@
+.mob-menu {
+  position: fixed;
+  top: 70px;
+  right: -4000px;
+  min-height: calc(100vh - 70px);
+  width: 100%;
+  background: var(--white-color);
+
+  &.show {
+    right: 0;
+  }
+}
+
+.menu {
+  padding: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    background: #F4F4F4;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 1px;
+    width: calc(100% - 40px);
+  }
+
+  &__item {
+    margin: 20px;
+  }
+
+  &__link {
+    font-size: 28px;
+    line-height: 39px;
+    color: #252424;
+  }
+}

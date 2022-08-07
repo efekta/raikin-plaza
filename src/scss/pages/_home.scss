@@ -1,7 +1,7 @@
 // Специфичные стили страницы Home
 .section-top {
   background: #252424;
-  padding: 30px 0 53px 0;
+  padding: 100px 0 53px 0;
 
   .title {
     width: 173px;
@@ -11,6 +11,12 @@
 .card-list {
   display: grid;
   gap: 20px;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 48% 48%;
   flex-wrap: wrap;
+  padding: 51px 0 130px 0;
+
+  @media(min-width: 1024px) {
+    grid-template-columns: repeat(4, 167px);
+    justify-content: center;
+  }
 }
