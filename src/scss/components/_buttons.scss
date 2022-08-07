@@ -1,1 +1,15 @@
 //Кнопки
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  //font-family: 'Manrope', sans-serif;
+  padding: 0;
+  transition: all .3s ease-in-out;
+}
+
+button:disabled,
+button[disabled] {
+  cursor: not-allowed;
+  pointer-events: all;
+}

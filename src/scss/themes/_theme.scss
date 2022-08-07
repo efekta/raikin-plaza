@@ -1,29 +1,60 @@
 // Тема по умолчанию
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
-    font-family: sans-serif;
-    &:focus,
-    &:active{
-        outline: none;
-    }
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
-html,
-body{
+
+html, body {
     height: 100%;
 }
-.wrapper{
+
+html {
+    box-sizing: border-box;
+    font-variation-settings: 'wght' 400;
+    font: 14px/1.2 'Manrope', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+a {
+    display: inline-block;
+    //font-family: 'Manrope', sans-serif;
+    //font-variation-settings: 'wght' 600;
+    font-size: 14px;
+    line-height: 16px;
+    //color: #309CF4;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.wrapper {
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    .main{
+
+    .main {
         flex: 1 1 auto;
     }
 }
-button{
-    background: none;
-    border: none;
-    cursor: pointer;
+
+.svg-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
 }
