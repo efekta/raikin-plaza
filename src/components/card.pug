@@ -2,8 +2,8 @@ mixin card()
     li.card
         a.card__link
             picture
-                source.card__img(srcset="img/cover.webp" type="image/webp")
-                img.card__img(loading="lazy" src="img/cover.jpg" alt="")
+                source(srcset="img/cover.webp" type="image/webp")
+                img(loading="lazy" src="img/cover.jpg" alt="")
             h3.card__title Термокружка
             .card__bottom
                 span.card__count 700
