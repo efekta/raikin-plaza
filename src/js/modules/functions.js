@@ -24,6 +24,7 @@ export function isWebp() {
                 $('.mob-menu').toggleClass('show');
                 $('.burger').toggleClass('open');
                 $('.header').toggleClass('light-bg');
+                $('html').toggleClass('hidden');
             })
         });
     });

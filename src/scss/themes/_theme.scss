@@ -5,15 +5,15 @@
     box-sizing: inherit;
 }
 
-html, body {
-    //height: 100%;
-}
-
 html {
     box-sizing: border-box;
     font-variation-settings: 'wght' 400;
     font: 14px/1.2 'TRY Clother', sans-serif;
     color: var(--dark-color);
+}
+
+html.hidden {
+    overflow: hidden;
 }
 
 body {
@@ -51,7 +51,6 @@ ol, ul {
 
     .main {
         flex: 1 1 auto;
-        //padding: 51px 0 130px 0;
     }
 
     .main--bg-white {
