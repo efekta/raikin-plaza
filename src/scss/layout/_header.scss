@@ -1,4 +1,11 @@
 // Шапка
 .header {
   background: #252424;
+
+  &-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0;
+  }
 }
