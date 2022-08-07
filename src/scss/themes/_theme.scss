@@ -31,13 +31,20 @@ a {
     //font-variation-settings: 'wght' 600;
     font-size: 14px;
     line-height: 16px;
-    //color: #309CF4;
+    color: inherit;
     text-decoration: none;
     transition: all .3s ease-in-out;
+    //cursor: pointer;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
+}
+
+ol, ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
 }
 
 .wrapper {
