@@ -1,5 +1,10 @@
 // Типографика
 @font-face {
-  font-family: 'Manrope';
-  //src: url('assets/fonts/Manrope-VariableFont_wght.ttf') format('truetype');
+  font-family: 'TRY Clother';
+  src: url('../fonts/try_clother.eot'); /* IE 9 Compatibility Mode */
+  src: url('../fonts/try_clother.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+  url('../fonts/try_clother.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/try_clother.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+  url('../fonts/try_clother.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/try_clother.svg#try_clother') format('svg'); /* Chrome < 4, Legacy iOS */
 }
